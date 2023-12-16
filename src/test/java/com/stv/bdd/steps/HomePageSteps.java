@@ -29,8 +29,7 @@ public class HomePageSteps extends BasicFactoryTest {
 
     @When("The user accepts all cookies")
     public void theUserAcceptsAllCookies() {
-        WebElement trustButton = getDriver().findElement(By.xpath("//button[contains(text(),'Accept all')]"));
-        trustButton.click();
+        mainFactoryPage.clickOnTrustButton();
     }
 
     @Then("Wiggle Logo is displayed")
